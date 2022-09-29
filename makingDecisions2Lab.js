@@ -14,7 +14,8 @@ let firstItem = arr[0]
   Remove the last item from the 'arr' array and store it in a variable named 'lastItemRemoved'. Console.log the array to verify you no longer have the last item.
 */
 
-lastItemRemoved
+let lastItemRemoved = arr.pop()
+console.log(arr)
 
 ////////// PROBLEM 3 //////////
 
@@ -26,7 +27,9 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
   Loop through the 'family' array and console.log every item.
 */
 
-//Code Here
+for (i=0; i < family.length; i++){
+  console.log(family[i])
+}
 
 
 
@@ -41,8 +44,10 @@ let evensArr = []
   Use a for-loop to iterate through each number in the 'nums' array, if the number is even, append it to the 'evensArr'.
 */
 
-//Code Here
-
+for(let i=0; i < nums.length; i++){
+  if (nums[i] % 2 === 0){evensArr.push(nums[i])}
+}
+console.log(evensArr)
 
 
 ////////// PROBLEM 5 //////////
@@ -55,8 +60,17 @@ var score = 74
   Determine if the letter grade of the given variable 'score'. If the variable is a 90 or above, console log an 'A', between 80 and 89, console log a 'B', between 70 and 79, 'C', between 60 and 69, 'D', and anything below 60 should console log an 'F'.
 */
 
-//Code Here
-
+if (score > 90){
+  console.log("A")
+} else if (score > 80 && score < 89){
+  console.log("B")
+} else if (score >70 && score < 79){
+  console.log("C")
+} else if (score > 60 && score < 69){
+  console.log("D")
+} else {
+  console.log("F")
+}
 
 ////////// Intermediate Problems //////////
 
@@ -70,7 +84,8 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
   Create a variable named 'someNum' and set it equal to the fifth value of the 'myFavoriteNumbers' array.
 */
 
-//Code Here
+let someNum= myFavoriteNumbers[4]
+console.log(someNum)
 
 
 ////////// PROBLEM 7 //////////
@@ -79,7 +94,7 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 // Use an if statement to check the length of the 'myFavoriteNumbers' array. If it's less than 7, log 'There are not enough elements in this array' to the console. If the length is more than 7, reassign the value of 'someNum' to the value of the 7th element in the array. (Hint: how can you make sure that your code works for exactly 7 elements? What index do you use to get the 7th element?)
 
 //Code Here
-
+if(nyFavoriteNumbers.length < 7)
 
 ////////// PROBLEM 8 //////////
 
